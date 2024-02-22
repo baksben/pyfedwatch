@@ -5,7 +5,7 @@ from datetime import datetime
 from calendar import monthrange
 import pandas_datareader as pdr
 import inspect
-from .fomc import FOMC
+from pyfedwatch.fomc import FOMC
 
 class FedWatch():
     
