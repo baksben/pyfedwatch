@@ -201,8 +201,8 @@ class FedWatch():
         bin_hike_df = self.fomc_data.summary.copy()
         
         # Filter out the requested number of upcoming FOMC meetings from the meeting list
-        bin_hike_df = bin_hike_df[bin_hike_df['Order'] > 0]
-        # bin_hike_df = bin_hike_df[(bin_hike_df['Order'] > 0) & ((bin_hike_df['Order'] <= self.fomc_data.num_upcoming))]
+        # bin_hike_df = bin_hike_df[bin_hike_df['Order'] > 0]
+        bin_hike_df = bin_hike_df[(bin_hike_df['Order'] > 0) & ((bin_hike_df['Order'] <= self.fomc_data.num_upcoming))]
         
         
         # Calculate the monthly change in the implied rate of contratcs
